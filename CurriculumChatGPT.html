@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .main-container {
+            padding: 50px;
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .skill-bar {
+            margin-bottom: 10px;
+        }
+        .skill-bar .skill-bar-inner {
+            height: 10px;
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container main-container bg-dark">
+        <div class="row bg-light">
+            <div class="col-sm-4">
+                <img src="profile-image.jpg" alt="Imagen de perfil" class="profile-image">
+            </div>
+            <div class="col-sm-8">
+                <h1> Álvaro Garvín Guerrero</h1>
+                <!-- Descripción breve de tus habilidades y experiencia. -->
+                <p> Tengo un gran nivel en el lenguaje nativo de las applicaciones moviles, tanto en Swift por parte de iOS como en Kotlin por parte de Android. </p>
+                <p> Tengo buen nivel con php a nivel nativo aunque tengo mas soltura con Laravel. A nivel de diseño manejo de manera consistente html y css, pero donde mas destaco es en Bootstrap </p>
+            </div>
+        </div>
+        <div class="row bg-light">
+            <div class="col-sm-12">
+                <h2 class="section-title">Estudios</h2>
+                <ul>
+                    <li> Formacion Profesional Superior: Desarrollo de aplicaciones multiplataforma - Escuela Estech, Linares </li>
+                    <li> Titulo Escolar de Bachiller - Virgen del Carmen, Jaén </li>
+                    <li> Curso Academico de Inglés - Centro Britanico Paseo de la Estacion, Jaén </li>
+                    <li> Curso de Programación de Videojuegos con GameMaker - Universidad Popular, Jaén </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row bg-light">
+            <div class="col-sm-12">
+                <h2 class="section-title">Habilidades</h2>
+                <div class="skill-bar">
+                    <div class="skill-bar-title">Lenguaje nativo para app desarrolladas en iOS: Swift</div>
+                    <p> </p>
+                    <div class="skill-bar-inner" style="width: 70%;"></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-bar-title">Habilidad 2</div>
+                    <div class="skill-bar-inner" style="width: 60%;"></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-bar-title">Habilidad 3</div>
+                    <div class="skill-bar-inner" style="width: 90%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-light">
+            <div class="col-sm-12">
+                <h2 class="section-title">Idiomas</h2>
+                <ul>
+                    <li>Ingles - Nivel Medio</li>
+                        <div class="skill-bar">
+                            <div class="skill-bar-inner" style="width: 50%;"></div>
+                        </div>
+                    <li>Frances - Nivel Medio-Bajo</li>
+                    <div class="skill-bar">
+                        <div class="skill-bar-inner" style="width: 40%;"></div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="row bg-light">
+            <div class="col-sm-12">
+                <h2 class="section-title">Contacto</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
