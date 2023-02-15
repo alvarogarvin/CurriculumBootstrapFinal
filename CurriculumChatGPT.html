@@ -12,17 +12,11 @@
             background-color: #f8f8f8;
             color: #333;
         }
-        .main-container {
-            padding: 50px;
-        }
         .profile-image {
             width: 200px;
             height: 200px;
             border-radius: 50%;
             margin-bottom: 20px;
-        }
-        h1 {
-            margin-top: 0;
         }
         .section-title {
             font-size: 24px;
@@ -30,23 +24,41 @@
             margin-top: 30px;
             margin-bottom: 20px;
         }
-        .skill-bar {
-            margin-bottom: 10px;
+        section {
+            display: flex;
+            width: 400px;
+            height: 430;
         }
-        .skill-bar .skill-bar-inner {
-            height: 10px;
-            background-color: #333;
+
+        section img {
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .5;
+            transition: .5s ease;
+            filter: grayscale(100%);
+        }
+
+        section img:hover{
+            cursor: crosshair;
+            width: 200px;
+            opacity: 1;
+            filter: contrast(120%);
+            filter: grayscale(0%);
         }
     </style>
+
+    <!-- Una duda que tengo es que si las linas esas de progreso se ven que son de progreso o se ven que son lineas raras -->
+
 </head>
 <body>
-    <div class="container main-container bg-dark">
+    <div class="container p-5 bg-dark">
         <div class="row bg-light">
             <div class="col-sm-4">
                 <img src="profile-image.jpg" alt="Imagen de perfil" class="profile-image">
             </div>
             <div class="col-sm-8">
-                <h1> Álvaro Garvín Guerrero</h1>
+                <h1 class="pt-3"> Álvaro Garvín Guerrero </h1>
                 <!-- Descripción breve de tus habilidades y experiencia. -->
                 <p> Tengo un gran nivel en el lenguaje nativo de las applicaciones moviles, tanto en Swift por parte de iOS como en Kotlin por parte de Android. </p>
                 <p> Tengo buen nivel con php a nivel nativo aunque tengo mas soltura con Laravel. A nivel de diseño manejo de manera consistente html y css, pero donde mas destaco es en Bootstrap </p>
@@ -56,28 +68,55 @@
             <div class="col-sm-12">
                 <h2 class="section-title">Estudios</h2>
                 <ul>
-                    <li> Formacion Profesional Superior: Desarrollo de aplicaciones multiplataforma - Escuela Estech, Linares </li>
-                    <li> Titulo Escolar de Bachiller - Virgen del Carmen, Jaén </li>
-                    <li> Curso Academico de Inglés - Centro Britanico Paseo de la Estacion, Jaén </li>
-                    <li> Curso de Programación de Videojuegos con GameMaker - Universidad Popular, Jaén </li>
+                    <li class="my-1"> Formacion Profesional Superior: Desarrollo de aplicaciones multiplataforma - Escuela Estech, Linares </li>
+                    <li class="my-1"> Titulo Escolar de Bachiller - Virgen del Carmen, Jaén </li>
+                    <li class="my-1"> Curso Academico de Inglés - Centro Britanico Paseo de la Estacion, Jaén </li>
+                    <li class="my-1"> Curso de Programación de Videojuegos con GameMaker - Universidad Popular, Jaén </li>
                 </ul>
             </div>
         </div>
         <div class="row bg-light">
             <div class="col-sm-12">
                 <h2 class="section-title">Habilidades</h2>
-                <div class="skill-bar">
-                    <div class="skill-bar-title">Lenguaje nativo para app desarrolladas en iOS: Swift</div>
-                    <p> </p>
-                    <div class="skill-bar-inner" style="width: 70%;"></div>
+                <div class="my-3">
+                    <strong> Lenguaje nativo para app desarrolladas en iOS: Swift </strong>
+                    <cite> Me desenvuelvo bastante bien en este lenguaje, tengo experiencia haciendo mapas y editando tanto el propio mapa como sus marcadores y propiedades. Soy capaz de hacer un chat online con notificaciones por peticiones push y un webView con varias funcionalidades extras como hacer un marcaje de paginas en favoritos o navegación sin salir del webView. </cite>
+                    <div class="progress">
+                        <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"> 75% </div>
+                    </div>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-bar-title">Habilidad 2</div>
-                    <div class="skill-bar-inner" style="width: 60%;"></div>
+                <div class="my-3">
+                    <strong> Lenguaje nativo para app desarrolladas en Android: Kotlin </strong>
+                    <cite> Tengo un nivel bastante parecido a Swift con este lenguaje, con la diferecia de que con este tengo mas solutra puesto que lo he utilizado mas. Como en las app's nacidas en Swift, tengo experiencia en gran ambito del desarrollo de mapas como con el desarrollo de webView y notificaciones. A demas de un diseño bastante intuitivo utilizando tableViews y una navegacion rapida y facil. </cite>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"> 80% </div>
+                    </div>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-bar-title">Habilidad 3</div>
-                    <div class="skill-bar-inner" style="width: 90%;"></div>
+                <div class="my-3">
+                    <strong> Backend: Php - Laravel</strong>
+                    <cite> Hablando de Backend, en este ambito estoy mas desarrollado con el framwork Laravel que con el propio lenguaje nativo en sí. Pero esto no significa que no tenga un gran nivel con php, puesto que he adquirido bastante soltura a lo largo del tiempo, aunque es cierto que gracias a laravel he aprendido a mantener un servidor web con una base de datos y con la tecnica MVC "Modelo-Vista-Controlador"</cite>
+                    <div class="progress">
+                        <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"> 75% </div>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <strong> Frontend: HTML - CSS - Bootstrap - Vue </strong>
+                    <cite> Conozco casi a la perfección </cite>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"> 80% </div>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <strong> Bases de Datos: MySQL </strong>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"> 90% </div>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <strong> Diseño Web y Analisis del Cliente </strong>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"> 30% </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,12 +125,12 @@
                 <h2 class="section-title">Idiomas</h2>
                 <ul>
                     <li>Ingles - Nivel Medio</li>
-                        <div class="skill-bar">
-                            <div class="skill-bar-inner" style="width: 50%;"></div>
-                        </div>
+                    <div class="progress">
+                        <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> 50% </div>
+                    </div>
                     <li>Frances - Nivel Medio-Bajo</li>
-                    <div class="skill-bar">
-                        <div class="skill-bar-inner" style="width: 40%;"></div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"> 40% </div>
                     </div>
                 </ul>
             </div>
@@ -99,6 +138,10 @@
         <div class="row bg-light">
             <div class="col-sm-12">
                 <h2 class="section-title">Contacto</h2>
+                <section>
+                    <img src="img/Logo-GitHub.png" class="img-fluid m-2">
+                    <img src="img/Logo-Linkedin.png" class="img-fluid m-2">
+                </section>
             </div>
         </div>
     </div>
