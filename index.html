@@ -24,11 +24,35 @@
             margin-top: 30px;
             margin-bottom: 20px;
         }
-        section {
-            display: flex;
-            height: 230px;
+
+
+        @media screen and (max-width: 576px){
+            section {
+                display: flex;
+                height: 150px;
+            }
         }
 
+        @media screen and (min-width: 576px) and (max-width: 768px){
+            section {
+                display: flex;
+                height: 100px;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px){
+            section {
+                display: flex;
+                height: 140px;
+            }
+        }
+
+        @media screen and (min-width: 992px){
+            section {
+                display: flex;
+                height: 230px;
+            }
+        }
         section img {
             width: 0px;
             flex-grow: 1;
@@ -138,13 +162,15 @@
             <div class="col-sm-12">
                 <h2 class="section-title">Contacto</h2>
                 <div class="row">
-                    <section class="col-12 col-sm-8 offset-sm-2">
+                    <section class="col-sm-8 offset-sm-2">
                         <img src="img/Logo-GitHub.png" class="img-fluid m-2">
                         <img src="img/Logo-Linkedin.png" class="img-fluid m-2">
                         <img src="img/Logo-Whatssap.png" class="img-fluid m-2">
                     </section>
                 </div>
             </div>
+        </div>
+        <div class="col-2 col-sm-4 col-md-6 col-lg-8 col-xl-10 bg-primary p-5">
         </div>
     </div>
 </body>
