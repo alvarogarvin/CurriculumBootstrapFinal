@@ -9,10 +9,10 @@ a{
 }
 
 .profile-image {
-    width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 5%;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 
 .section-title {
@@ -23,31 +23,67 @@ a{
     text-decoration-line: underline;
 }
 
+.progress-bar{
+    background-color: #333;
+}
+
 @media screen and (max-width: 576px){
     section {
         display: flex;
-        height: 150px;
+        height: 130px;
+    }
+
+    section img:hover{
+        cursor: crosshair;
+        width: 30px;
+        opacity: 1;
+        filter: contrast(120%);
+        filter: grayscale(0%);
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px){
     section {
         display: flex;
-        height: 100px;
+        height: 75px;
+    }
+
+    section img:hover{
+        cursor: crosshair;
+        width: 20px;
+        opacity: 1;
+        filter: contrast(120%);
+        filter: grayscale(0%);
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
     section {
         display: flex;
-        height: 140px;
+        height: 120px;
+    }
+
+    section img:hover{
+        cursor: crosshair;
+        width: 30px;
+        opacity: 1;
+        filter: contrast(120%);
+        filter: grayscale(0%);
     }
 }
 
 @media screen and (min-width: 992px){
     section {
         display: flex;
-        height: 230px;
+        height: 210px;
+    }
+
+    section img:hover{
+        cursor: crosshair;
+        width: 50px;
+        opacity: 1;
+        filter: contrast(120%);
+        filter: grayscale(0%);
     }
 }
 
@@ -60,10 +96,7 @@ section img {
     filter: grayscale(100%);
 }
 
-section img:hover{
-    cursor: crosshair;
-    width: 50px;
-    opacity: 1;
-    filter: contrast(120%);
-    filter: grayscale(0%);
+p {
+    text-align: justify;
+    font-style: italic;
 }
